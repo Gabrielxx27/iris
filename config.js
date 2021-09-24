@@ -4380,10 +4380,75 @@ module.exports = kconfig = async (kill, message) => {
 				await kill.reply(from, dddlist, id)
 				break
 				
-			// Para usar a base remova o /* e o */ e bote um nome dentro das aspas da case e em seguida sua mensagem dentro das aspas na frente do from
-			/*case 'Nome do comando sem espaços':
-				await kill.reply(from, 'Sua mensagem', id)
-				break*/
+				//Comandos para o grupo de investimentos
+			
+            case 'investimento':
+	            await kill.reply(from, mess.invest(), id)
+	            break
+
+            case 'plataform':
+	            await kill.reply(from, mess.binance(), id)
+	            break
+
+            case 'corretora':
+	            await kill.reply(from, mess.corret(), id)
+	            break
+
+            case 'ideias':
+	            await kill.reply(from, mess.ide(), id)
+	            break
+
+            case 'inv':
+	            await kill.reply(from, mess.inve(), id)
+	            break
+
+            case 'when':
+	            await kill.reply(from, mess.w(), id)
+	            break
+
+            case 'howmuch':
+	            await kill.reply(from, mess.h(), id)
+	            break
+
+            case 'scratchs':
+	            await kill.reply(from, mess.s(), id)
+	            break
+
+            case 'avoid':
+	            await kill.reply(from, mess.a(), id)
+	            break
+
+            case 'cvar':
+	            await kill.reply(from, mess.va(), id)
+	            break
+				
+			case 'estrategias':
+				await kill.reply(from, mess.est(), id)
+				break
+
+			case 'arbitragem':
+				await kill.reply(from, mess.arb(), id)
+				break
+
+			case 'trade':
+				await kill.reply(from, mess.tra(), id)
+				break
+			
+			case 'daytrading':
+				await kill.reply(from, mess.dt(), id)
+				break
+			
+			case 'swingtrading':
+				await kill.reply(from, mess.st(), id)
+				break
+
+			case 'hodl':
+				await kill.reply(from, mess.hd(), id)
+				break
+
+			case 'regras':
+				await kill.reply(from, mess.rules(), id)
+				break
 				
 			default:
 				if (isCmd) {
